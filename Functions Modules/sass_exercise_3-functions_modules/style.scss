@@ -1,0 +1,33 @@
+@mixin article-card($color,$border-color,$font-size: 1rem) {
+    color: $color;
+    padding: 1rem;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+}
+
+.article-card1 {
+    @include article-card(blue, green);
+}
+
+.article-card2 {
+    @include article-card(red, green);
+}
+
+.article-card3 {
+    @include article-card(blue, green);
+}
+
+.article-card4 {
+    @include article-card(red, green);
+}
+
+.article-card5 {
+    @include article-card(green, blue,24px);
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 1rem;
+}
+
