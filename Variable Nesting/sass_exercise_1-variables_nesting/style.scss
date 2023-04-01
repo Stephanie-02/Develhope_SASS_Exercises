@@ -1,0 +1,44 @@
+$color-primary: red;
+$color-tertiary: green;
+
+$scss-variable: blue;
+body {
+border: 1px solid $color-primary;
+
+    h1 {
+        color: $color-tertiary;
+        text-decoration: underline 0.8px $scss-variable;
+        text-align: center;
+    }
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid $color-tertiary;
+    margin: 1rem;
+
+    .one {
+        border: 1px solid $color-tertiary;
+        color: $scss-variable;
+        padding: 5px;
+    }
+
+    .two {
+        border: 1px solid $color-tertiary;
+        color: $color-primary;
+        padding: 5px;
+    }
+
+    .three {
+        border: 1px solid $color-tertiary;
+        color: $scss-variable;
+        padding: 5px;
+    }
+
+    .four {
+        border: 1px solid $color-tertiary;
+        color: $color-primary;
+        padding: 5px;
+    }
+}
