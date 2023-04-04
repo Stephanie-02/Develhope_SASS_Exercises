@@ -6,6 +6,7 @@ This function should be applied in the main stylesheet, so that the only sizing 
 **Suggestion:**
 
 @function rem(...
+
 @return calc(...
 }
 
