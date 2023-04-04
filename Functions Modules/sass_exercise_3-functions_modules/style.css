@@ -30,10 +30,10 @@
   color: green;
   padding: 1rem;
   border: 1px solid blue;
-  font-size: 24px;
+  font-size: calc(1.5rem);
 }
 
-body {
+body h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 1rem;
