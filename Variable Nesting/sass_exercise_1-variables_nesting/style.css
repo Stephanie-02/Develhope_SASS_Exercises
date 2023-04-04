@@ -1,9 +1,10 @@
 body {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 body h1 {
   color: green;
-  text-decoration: underline 0.8px blue;
+  -webkit-text-decoration: underline 0.8px blue;
+          text-decoration: underline 0.8px blue;
   text-align: center;
 }
 
@@ -16,22 +17,20 @@ body h1 {
 .numbers .one {
   border: 1px solid green;
   color: blue;
-  padding: 5px;
+  padding: 8px;
 }
 .numbers .two {
   border: 1px solid green;
   color: red;
-  padding: 5px;
+  padding: 8px;
 }
 .numbers .three {
   border: 1px solid green;
   color: blue;
-  padding: 5px;
+  padding: 8px;
 }
 .numbers .four {
   border: 1px solid green;
   color: red;
-  padding: 5px;
-}
-
-/*# sourceMappingURL=style.css.map */
+  padding: 8px;
+}/*# sourceMappingURL=style.css.map */
