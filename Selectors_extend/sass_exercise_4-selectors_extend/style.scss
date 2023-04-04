@@ -1,37 +1,57 @@
 @use "function.scss" as f;
 
-@mixin article-card($color,$border-color,$font-size: 1rem) {
+@mixin article-card($color,$border-color,$font-size: f.rem(16)) {
     color: $color;
-    padding: 1rem;
+    padding: f.rem(16);
 }
 
 .article-card1 {
     @include article-card(blue, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card2 {
     @include article-card(red, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card3 {
     @include article-card(blue, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card4 {
     @include article-card(red, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card5 {
-    @include article-card(green, blue,f.rem(24));
+    @include article-card(green, blue, f.rem(24));
+    border: f.rem(1.5) solid blue;
+    margin: f.rem(8);
 }
 
-.info {
+body {
+    border: f.rem(2) solid red;
+}
+
+.header1 {
+    color: green;
+    text-decoration:  f.rem(1) underline blue;
+    text-align: center;
+}
+
+.header2 {
+    @extend .header1;
+    padding: 1rem;
+    border: 1px solid red;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#thefour {
+    border: f.rem(1) solid green;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-bottom: 1rem;
-    & h2 {
-        @extend .info;
-        padding: 1rem;
-        border: 1px solid red;
-    }
-   }
+    margin: f.rem(8);
+}

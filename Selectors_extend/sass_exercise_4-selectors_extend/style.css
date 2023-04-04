@@ -1,36 +1,56 @@
 .article-card1 {
   color: blue;
   padding: 1rem;
+  border: 0.0625rem solid green;
 }
 
 .article-card2 {
   color: red;
   padding: 1rem;
+  border: 0.0625rem solid green;
 }
 
 .article-card3 {
   color: blue;
   padding: 1rem;
+  border: 0.0625rem solid green;
 }
 
 .article-card4 {
   color: red;
   padding: 1rem;
+  border: 0.0625rem solid green;
 }
 
 .article-card5 {
   color: green;
   padding: 1rem;
+  border: 0.09375rem solid blue;
+  margin: 0.5rem;
 }
 
-.info, .info h2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 1rem;
+body {
+  border: 0.125rem solid red;
 }
-.info h2 {
+
+.header1, .header2 {
+  color: green;
+  -webkit-text-decoration: 0.0625rem underline blue;
+          text-decoration: 0.0625rem underline blue;
+  text-align: center;
+}
+
+.header2 {
   padding: 1rem;
   border: 1px solid red;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+#thefour {
+  border: 0.0625rem solid green;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
