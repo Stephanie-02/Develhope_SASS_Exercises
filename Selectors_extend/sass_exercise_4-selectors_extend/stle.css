@@ -1,0 +1,32 @@
+.article-card1 {
+  color: blue;
+  padding: 1rem;
+}
+
+.article-card2 {
+  color: red;
+  padding: 1rem;
+}
+
+.article-card3 {
+  color: blue;
+  padding: 1rem;
+}
+
+.article-card4 {
+  color: red;
+  padding: 1rem;
+}
+
+.article-card5 {
+  color: green;
+  padding: 1rem;
+}
+
+body h1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=stle.css.map */
