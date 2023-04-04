@@ -1,0 +1,36 @@
+.article-card1 {
+  color: blue;
+  padding: 1rem;
+}
+
+.article-card2 {
+  color: red;
+  padding: 1rem;
+}
+
+.article-card3 {
+  color: blue;
+  padding: 1rem;
+}
+
+.article-card4 {
+  color: red;
+  padding: 1rem;
+}
+
+.article-card5 {
+  color: green;
+  padding: 1rem;
+}
+
+.info, .info h2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 1rem;
+}
+.info h2 {
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

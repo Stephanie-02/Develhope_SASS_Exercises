@@ -1,9 +1,9 @@
 @use "function.scss" as f;
 
-@mixin article-card($color,$border-color,$font-size: 1rem) {
+@mixin article-card($color,$border-color,$font-size: f.rem(16)) {
     color: $color;
-    padding: 1rem;
-    border: 1px solid $border-color;
+    padding: f.rem(16);
+    border: f.rem(1) solid $border-color;
     font-size: $font-size;
 }
 
@@ -30,6 +30,6 @@
 body { h1 {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-bottom: 1rem;
+    margin-bottom: f.rem(16);
    }
 }
