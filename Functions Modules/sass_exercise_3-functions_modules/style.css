@@ -1,53 +1,53 @@
 .article-card1 {
   color: blue;
-  padding: calc(1rem);
-  border: calc(0.0625rem) solid green;
-  font-size: calc(1rem);
+  padding: 1rem;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
 }
 
 .article-card2 {
   color: red;
-  padding: calc(1rem);
-  border: calc(0.0625rem) solid green;
-  font-size: calc(1rem);
+  padding: 1rem;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
 }
 
 .article-card3 {
   color: blue;
-  padding: calc(1rem);
-  border: calc(0.0625rem) solid green;
-  font-size: calc(1rem);
+  padding: 1rem;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
 }
 
 .article-card4 {
   color: red;
-  padding: calc(1rem);
-  border: calc(0.0625rem) solid green;
-  font-size: calc(1rem);
+  padding: 1rem;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
 }
 
 .article-card5 {
   color: green;
-  padding: calc(1rem);
-  border: calc(0.0625rem) solid blue;
-  font-size: calc(1.5rem);
+  padding: 1rem;
+  border: 0.0625rem solid blue;
+  font-size: 1.5rem;
 }
 
 body {
-  border: calc(0.0625rem) solid red;
-  padding: calc(0.0625rem);
+  border: 0.0625rem solid red;
+  padding: 0.0625rem;
   display: grid;
 }
 
 h1 {
   color: green;
-  -webkit-text-decoration: calc(0.0625rem) underline blue;
-          text-decoration: calc(0.0625rem) underline blue;
+  -webkit-text-decoration: 0.0625rem underline blue;
+          text-decoration: 0.0625rem underline blue;
   text-align: center;
 }
 
 #thefour {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: calc(1rem);
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
