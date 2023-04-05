@@ -1,36 +1,95 @@
 @use "function.scss" as f;
 
+$classes: (1: fs-1rem,2: fs-2rem,3: fs-3rem);
+
 @mixin article-card($color,$border-color,$font-size: 1rem) {
     color: $color;
-    padding: 1rem;
+    border: f.rem(1) solid $border-color;
+    font-size: $font-size;
+    padding: f.rem(16);
 }
 
 .article-card1 {
     @include article-card(blue, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card2 {
     @include article-card(red, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card3 {
     @include article-card(blue, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card4 {
     @include article-card(red, green);
+    border: f.rem(1) solid green;
 }
 
 .article-card5 {
-    @include article-card(green, blue,24px);
+    @include article-card(green, blue,f.rem(24));
+    border: f.rem(1.5) solid blue;
+    margin: f.rem(6);
 }
 
 body {
-    h1 {
+    border: f.rem(2) solid red;
+}
+
+.header1 {
+    color: green;
+    text-decoration:  f.rem(1) underline blue;
+    text-align: center;
+}
+
+.header2 {
+    @extend .header1;
+    padding: f.rem(16);
+    border: f.rem(1) solid red;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#thefour {
+    border: f.rem(1) solid green;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-bottom: 1rem;
-}
+    margin: f.rem(8);
 }
 
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: f.rem(16);
+}
 
+.numbers > div {
+    display: inline-flex;
+    border: f.rem(1) solid red;
+    width: f.rem(45);
+    height: f.rem(45);
+    margin: f.rem(8);
+
+    @for $index from 1 through 20 {
+        &:nth-of-type(#{$index}) {
+            @if $index==10 {
+                color: red;
+                background-color: blue;
+            }
+            @else {
+                color: lighten(black,$amount: $index*5);
+                background-color: darken(white,$amount: $index*5);
+            }
+        }
+    }
+
+    @each $key , $value in $classes {
+        &.#{$value} {
+            font-size: $key * 1rem;
+        }
+    }
+}
